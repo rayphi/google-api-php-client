@@ -1,7 +1,7 @@
 {
-    "name": "google/apiclient",
-    "type": "library",
-    "description": "Client library for Google APIs",
+    "name": "rayphi/google-apiclient",
+    "type": "magento-module",
+    "description": "Magento Client library for Google APIs",
     "keywords": ["google"],
     "homepage": "http://developers.google.com/api-client-library/php",
     "license": "Apache-2.0",
@@ -12,14 +12,15 @@
         "phpunit/phpunit": "3.7.*",
         "squizlabs/php_codesniffer": "~2.3"
     },
-    "autoload": {
-        "classmap": [
-            "src/"
-        ]
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
     },
     "extra": {
         "branch-alias": {
             "dev-master": "1.1.x-dev"
-        }
+        },
+        "map": [
+            ["src/Google", "lib/Google"]
+        ]
     }
 }
